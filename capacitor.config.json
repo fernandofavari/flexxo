@@ -1,0 +1,23 @@
+{
+    "appId": "io.ionic.starter",
+    "appName": "projeto",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 5000,
+            "launchAutoHide": true,
+            "backgroundColor": "#000000",
+            "androidSplashResourceName": "splash",
+            "androidScaleType": "CENTER_CROP",
+            "androidSpinnerStyle": "large",
+            "iosSpinnerStyle": "small",
+            "spinnerColor": "#999999",
+            "showSpinner": true,
+            "splashFullScreen": true,
+            "splashImmersive": true
+        }
+    },
+    "cordova": {}
+}
