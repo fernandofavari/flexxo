@@ -2,9 +2,9 @@ import React from 'react';
 import { IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import Footer from '../../components/Footer/Footer';
 
-import './Tab3.css'
+import './TabInfo.css'
 
-const Tab2: React.FC = () => {
+const TabInfo: React.FC = () => {
     return (
         <IonPage>            
             <IonToolbar >
@@ -13,7 +13,7 @@ const Tab2: React.FC = () => {
             </IonToolbar>           
 
             <IonContent>
-                <p className="IonContentTab3">Este app é o resultado do curso de Ionic 5 ministrado pelo professor Jardel na escola Flexxo.</p>
+                <div className="IonContentTab3">Este app é o resultado do curso de Ionic 5 ministrado pelo professor Jardel na escola Flexxo.</div>
             </IonContent>
 
             <Footer />
@@ -22,4 +22,4 @@ const Tab2: React.FC = () => {
     );
 };
 
-export default Tab2;
+export default TabInfo;

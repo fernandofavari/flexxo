@@ -9,13 +9,13 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Tab1 from "./pages/Tab1/Tab1";
-import Tab2 from './pages/Tab2/Tab2';
-import Tab3 from './pages/Tab3/Tab3';
-import Tab4 from './pages/Tab4/Tab4';
-import Tab5 from './pages/Tab5/Tab5';
-import Menu from './pages/Menu/Menu';
-import Main from './pages/Main/Main';
+import TabList from "./pages/TabList/TabList";
+import TabForm from './pages/TabForm/TabForm';
+import TabInfo from './pages/TabInfo/TabInfo';
+import TabPhoto from './pages/TabPhoto/TabPhoto';
+import TabCode from './pages/TabCode/TabCode';
+import Menu from './pages/SideMenu/SideMenu';
+import Information from './pages/Information/Information';
 import Gallery from './pages/Gallery/Gallery';
 //import Splash from './pages/Splash/Splash';
 
@@ -35,43 +35,50 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
+
+
 /* Theme variables */
 import './theme/variables.css';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 const App: React.FC = () => (
+  
   <IonApp>
     <Menu />
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet id="menu">
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} exact={true} />
-          <Route path="/tab4" component={Tab4} exact={true} />
-          <Route path="/tab5" component={Tab5} exact={true} />
-          <Route path="/Main" component={Main} />
+
+          <Route path="/" render={() => <Redirect to="/TabList" />} exact={true} />
+          <Route path="/TabList" component={TabList} exact={true} />
+          <Route path="/tabForm" component={TabForm} exact={true} />
+          <Route path="/tabInfo" component={TabInfo} exact={true} />
+          <Route path="/tabPhoto" component={TabPhoto} exact={true} />
+          <Route path="/tabCode" component={TabCode} exact={true} />
+          <Route path="/Information" component={Information} />
           <Route path="/Gallery" component={Gallery} />
+
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+
+          <IonTabButton tab="tabMain" href="/tabMain">
             <IonIcon class="fas fa-home"></IonIcon>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tabForm" href="/tabForm">
             <IonIcon class="fas fa-plus"></IonIcon>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="tabPhoto" href="/tabPhoto">
             <IonIcon class="fas fa-camera"></IonIcon>
           </IonTabButton>
-          <IonTabButton tab="tab5" href="/tab5">
+          <IonTabButton tab="tabCode" href="/tabCode">
             <IonIcon class="fas fa-qrcode"></IonIcon>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tabInfo" href="/tabInfo">
             <IonIcon class="fas fa-info-circle"></IonIcon>
           </IonTabButton>
+
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>

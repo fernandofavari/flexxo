@@ -3,7 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from 
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
-const Tab5: React.FC = () => {
+const TabCode: React.FC = () => {
   const openScanner = async () => {
     const data = await BarcodeScanner.scan();
     console.log(`Barcode data: ${data.text}`);
@@ -21,4 +21,4 @@ const Tab5: React.FC = () => {
     </IonPage>
   );
 };
-export default Tab5;
+export default TabCode;

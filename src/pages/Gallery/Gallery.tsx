@@ -9,7 +9,7 @@ const Gallery: React.FC = () => {
         <IonPage>
             <IonToolbar>
                 <IonButtons slot="start">
-                    <IonBackButton defaultHref="./../Tab3" />
+                    <IonBackButton defaultHref="./../TabInfo" />
                 </IonButtons>
                 <IonTitle>Galeria de Imagens</IonTitle>
             </IonToolbar>

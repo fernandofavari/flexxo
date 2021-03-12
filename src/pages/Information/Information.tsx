@@ -2,20 +2,20 @@ import React from 'react';
 import { IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar, IonButtons, IonBackButton } from '@ionic/react';
 import Footer from '../../components/Footer/Footer';
 
-import './Main.css'
+import './Information.css'
 
 const Main: React.FC = () => {
     return (
         <IonPage>
             <IonToolbar>
                 <IonButtons slot="start">
-                    <IonBackButton defaultHref="./../Tab3" />
+                    <IonBackButton defaultHref="./../TabInfo" />
                 </IonButtons>
                 <IonTitle>Dados Principais</IonTitle>
             </IonToolbar>
 
             <IonContent >
-                <p className="IonContentTab3">
+                <div className="IonContentTab3">
                     <b>Nome:</b> Fernando José de Favari Jr.<br />
                     <b>Telefone:</b> (16) 3023.5554<br />
                     <b>Celular:</b> (16) 98162.1370<br />
@@ -24,7 +24,7 @@ const Main: React.FC = () => {
                     <b>Cidade:</b> Ribeirão Preto<br />
                     <b>UF:</b> São Paulo<br />
                     <b>CEP:</b> 14090-082<br />
-                </p>
+                </div>
             </IonContent>
 
             <Footer />

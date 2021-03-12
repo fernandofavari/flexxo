@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyDNJbUvNjHu3lXTs52DPVa7BxjHLAFz3D0",
   authDomain: "projetoflexxo.firebaseapp.com",
   databaseURL: "https://projetoflexxo-default-rtdb.firebaseio.com",
@@ -12,6 +12,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics()
 
 //export default firebaseConfig;
-export const firebaseDatabase = firebase.database();
+export default firebase;
